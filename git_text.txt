@@ -1,16 +1,22 @@
 cd test33 - test33에 들어감
 pwd - 경로 확인
-git init - 파일을 깃 으로 
+git init - 파일을 깃 으로 변경
 git status - 깃 상태 확인 > 새로운 파일은 빨간색으로 뜸
 git add - 파일을 stage(staging) 함 stage = 파일을 임시 저장소에 보냄 -> git status의 빨간색이 초록색으로 바뀜
 git commit - commit을 해야지 git저장소에 남는다.
 git log - log볼 수 있음
 git log --oneline > 한 줄로 보여줌 { stack }
 작업 디렉토리 -> 스테이징 -> 저장소
+ git push -u origin master > 원격 저장소에 첫  번쨰 푸쉬할 때 사용하고 그 다음부터는 git push만 해주면 됨
+ git remote add origin > 원격 저장소랑 연결
+git remote --v >연결된 저장소 주소 확인
+git pull origin (branch명) = branch명 안에 있는 것을 받는다. (모든 폴더 {그림, 파일등})
 
 git branch -  branch표시
 git branch 변수명 - branch 만듦
 git switch 변수명 - branch를 변경	
+ git log --oneline --branches --graph > 그래프 시각화
+깃허브 웹페이지에서 branch명이랑 bash에서의 branch명이 같은 명으로 만들어서 push 
 
 (git branch, switch로 만들었던 것은 log에 안 남음)
 
@@ -25,16 +31,26 @@ sourcetree - 깔기 - 시각화해서 보여줌
 기록 순서대로 보여줘서 클릭하면 이전 작성한 것을 보여줌
 
 
+push 밀어서 보낸다
+pull 당겨서 받는다
+***pr pull Request > 내가 작업한 내용을 서버에서 당겨 받아주기를 요청한다.
+commit 메세지를 보낸다
 
 
 
 
+pr = 공부하기
 
 
+feat - 기능 구현
+clore - 기능 변경 없는 코드 변경 사항
+del - 코드 삭제
+fix - 버그 수정
+Docs - 문서 수정 > 같은 팀에서 태그 종류 결정하여서 작성
 
-
-
-
+깃 허브 이슈번호 
+브랜치 이름 구조  = <본인이름_타입(위의 태그)/#이슈번호> ex) dlwnsgml_feat/#1
+커밋 메세지 구조 = {[타입/#이슈번호] 메세지}로 작성
 
 
 
